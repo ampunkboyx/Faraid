@@ -10,7 +10,7 @@ from django.conf import settings
 
 env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, False)
+    DEBUG=(bool, True)
 )
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -28,10 +28,15 @@ DEBUG = env('DEBUG')
 
 # Assets Management
 ASSETS_ROOT = os.getenv('ASSETS_ROOT', '/static/assets') 
+#
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # load production server from .env
 ALLOWED_HOSTS        = ['*']
-CSRF_TRUSTED_ORIGINS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    'http://amirproject-10e5be3afaca.herokuapp.com/',  # Replace with your actual domain
+    'https://amirproject-10e5be3afaca.herokuapp.com/',  # Replace with your actual domain
+]
 
 # Application definition
 
@@ -135,7 +140,9 @@ STATIC_ROOT = os.path.join(CORE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (os.path.join(CORE_DIR, 'apps/static'),)
+STATICFILES_DIRS = [
+    os.path.join(CORE_DIR, 'static'),
+]
 django_heroku.settings(locals())
 #############################################################
 #############################################################
