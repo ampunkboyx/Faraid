@@ -89,6 +89,16 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'blockchain_v2',  # Your database name
+#         'USER': 'root',           # Your database user
+#         'PASSWORD': '',           # Your database password (empty in this case)
+#         'HOST': 'localhost',      # Your database host
+#         'PORT': '3306',           # Your database port
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -99,7 +109,6 @@ DATABASES = {
         'PORT': '3306',           # Your database port
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
