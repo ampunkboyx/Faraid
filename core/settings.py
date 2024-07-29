@@ -101,12 +101,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'blockchain_v2',  # Your database name
-        'USER': 'root',           # Your database user
-        'PASSWORD': '',           # Your database password (empty in this case)
-        'HOST': 'localhost',      # Your database host
-        'PORT': '3306',           # Your database port
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd2qrv8vo0k7hdh',  
+        'USER': 'uchc9hkr8ivee3',           
+        'PASSWORD': 'p0b42db0437e383c8146933e5be4cc3411aba0f815474c239a5a9190b04919dc9',          
+        'HOST': 'c1i13pt05ja4ag.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',      
+        'PORT': '5432',           
     }
 }
 # Password validation
