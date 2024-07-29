@@ -135,9 +135,7 @@ STATIC_ROOT = os.path.join(CORE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(CORE_DIR, 'apps/static'),
-)
+STATICFILES_DIRS = (os.path.join(CORE_DIR, 'apps/static'),)
 django_heroku.settings(locals())
 #############################################################
 #############################################################
