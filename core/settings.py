@@ -142,7 +142,7 @@ django_heroku.settings(locals())
 #############################################################
 #############################################################
 
-# pdf
+
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'  # Choose your preferred template pack
 
