@@ -30,7 +30,7 @@ DEBUG = env('DEBUG')
 ASSETS_ROOT = os.getenv('ASSETS_ROOT', '/static/assets') 
 #
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+#
 # load production server from .env
 ALLOWED_HOSTS        = ['*']
 CSRF_TRUSTED_ORIGINS = [
